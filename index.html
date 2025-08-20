@@ -99,6 +99,85 @@
         </div>
       </section>
 
+      <!-- SECTION 2: Taste the Colours -->
+      <section id="taste" class="section taste" aria-labelledby="taste-title">
+        <div class="container">
+          <h1 id="taste-title" class="eyebrow center">TASTE THE COLOURS</h2>
+          <div class="rule center" role="presentation"></div>
+
+          <ul class="swatches">
+            <!-- Each item image opens in a modal on click (and is also an anchor for logging) -->
+            <li class="swatch inview">
+              <a
+                href="/src/assets/spoon-red.png"
+                data-modal="image"
+                data-caption="Red"
+              >
+                <figure>
+                  <img
+                    src="/src/assets/spoon-red.png"
+                    alt="Red spoonful"
+                    onerror="this.src='/src/assets/placeholder.png';"
+                  />
+                  <figcaption>
+                    <h3>RED</h3>
+                    <p>
+                      Red foods remind us of berries and soft fruits, so we
+                      anticipate a sweet taste.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="swatch inview">
+              <a
+                href="/src/assets/spoon-green.png"
+                data-modal="image"
+                data-caption="Green"
+              >
+                <figure>
+                  <img
+                    src="/src/assets/spoon-green.png"
+                    alt="Green spoonful"
+                    onerror="this.src='/src/assets/placeholder.png';"
+                  />
+                  <figcaption>
+                    <h3>Green</h3>
+                    <p>
+                      Fresh, zingy green colours are reminiscent of unripe
+                      fruit, promising sour or acid flavours.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="swatch inview">
+              <a
+                href="/src/assets/spoon-white.png"
+                data-modal="image"
+                data-caption="White"
+              >
+                <figure>
+                  <img
+                    src="/src/assets/spoon-white.png"
+                    alt="White spoonful"
+                    onerror="this.src='/src/assets/placeholder.png';"
+                  />
+                  <figcaption>
+                    <h3>White</h3>
+                    <p>
+                      White foods evoke memories of salt and salty flavours,
+                      driving the expectation of a savoury treat.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
