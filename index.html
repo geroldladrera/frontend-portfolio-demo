@@ -12,6 +12,93 @@
       content="Interface Development Test — two responsive components with interactions."
     />
     <title>Interface Development Test</title>
+    <link rel="preload" href="/src/styles.scss" as="style" />
+    <link rel="stylesheet" href="/src/styles.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" tabindex="-1">
+      <!-- SECTION 1: What Does Cooking Mean? -->
+      <section
+        id="what"
+        class="section cooking"
+        aria-labelledby="cooking-title"
+      >
+        <div class="container grid">
+          <!-- Media mosaic (each item is an anchor per requirement) -->
+          <div class="mosaic inview">
+            <a
+              class="tile tile--tall"
+              href="/src/assets/cooking-pot.png"
+              data-modal="image"
+              data-caption="Pot simmering over fire"
+            >
+              <img
+                src="/src/assets/cooking-pot.png"
+                alt="Pot simmering over fire"
+                onerror="this.src='/src/assets/placeholder.png';"
+              />
+            </a>
+
+            <a
+              class="tile"
+              href="/src/assets/chef-prep.png"
+              data-modal="image"
+              data-caption="Chef plating small bites"
+            >
+              <img
+                src="/src/assets/chef-prep.png"
+                alt="Chef plating small bites"
+                onerror="this.src='/src/assets/placeholder.png';"
+              />
+            </a>
+
+            <a
+              class="tile"
+              href="/src/assets/perfect-eggs.png"
+              data-modal="image"
+              data-caption="Rows of egg bites with tender yolk"
+            >
+              <img
+                src="/src/assets/perfect-eggs.png"
+                alt="Rows of egg bites with tender yolk"
+                onerror="this.src='/src/assets/placeholder.png';"
+              />
+            </a>
+          </div>
+
+          <!-- Copy -->
+          <div class="copy inview">
+            <h1 id="cooking-title" class="eyebrow">WHAT DOES COOKING MEAN?</h2>
+
+            <div class="rule" role="presentation"></div>
+
+            <div class="richtext">
+              <p>
+                Is it simply applying heat to a food product? A way of making
+                certain food safe to eat? Or a way to create flavour and make
+                food more appealing? This is just part of what Hervé This, the
+                father of molecular gastronomy, has dedicated his life to
+                finding out. We spoke to him to find out what his experiments
+                have told him. And in the process even discovered the secret to
+                cooking the perfect egg...
+              </p>
+              <p class="callout">
+                <span class="kicker">THE PERFECT EGG</span>
+                <a class="cta" href="#perfect-egg" data-cta="perfect-egg">
+                  Keep water between 67 and 68°C for a flavourful, tender yolk
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
