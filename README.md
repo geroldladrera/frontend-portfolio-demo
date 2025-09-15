@@ -1,4 +1,17 @@
-# Interface Development Test
+[Live Site] (https://geroldladrera.github.io/interface-development-test/)
+
+<a href="https://ibb.co/Xx3QHvF1"><img src="https://i.ibb.co/5hn0Zfsm/Screenshot-2025-09-15-at-4-13-25-PM.png" alt="Screenshot-2025-09-15-at-4-13-25-PM" border="0"></a>
+
+# Frontend Portfolio Project: Semantic, Responsive, Accessible
+
+Key Features
+
+1. Responsive Design – Mobile-first, optimized for different screen sizes.
+2. Accessibility – Semantic HTML, keyboard navigation, ARIA roles, prefers-reduced-motion.
+3. Reusable Components – Consistent, scalable card layout system.
+4. Performance – Built with Vite for fast development and optimized production builds.
+5. Interactivity – Scroll animations, hover states, and accessible modal implementation.
+6. Maintainable Styles – SCSS with variables, mixins, and utility classes for consistency.
 
 Two responsive components built from the provided design:
 
@@ -39,13 +52,6 @@ interface-development-test/
 └── README.md
 ```
 
-> **Assets:** Exported images from the Zeplin file and place them into `src/assets/` using these **exact** names:
->
-> - `cooking-pot.png`, `chef-prep.png`, `perfect-eggs.png`
-> - `spoon-red.png`, `spoon-green.png`, `spoon-white.png`
->
-> The build already references those filenames. A 1×1 placeholder is included so the layout still renders if assets are missing.
-
 ---
 
 ## Running locally
@@ -82,7 +88,7 @@ npm run preview   # to test the built /dist locally
 
 ---
 
-## Notes for reviewers
+## Notes
 
 - The layout aims to be true to the attached design while being resilient to CMS changes.
 - I avoided hard‑coding text lengths and kept imagery aspect ratios flexible.
