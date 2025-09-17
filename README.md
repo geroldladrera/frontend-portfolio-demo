@@ -37,7 +37,7 @@ Live logging of all anchor clicks, subtle animations, and a small build step.
 ## Project structure
 
 ```
-interface-development-test/
+frontend-portfolio-demo/
 ├── index.html
 ├── package.json
 ├── postcss.config.js
